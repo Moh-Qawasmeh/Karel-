@@ -17,8 +17,7 @@ If the number of rows or columns is equal to one: In this case, we have either a
 - If M is less than 3 here, we cannot divide the board and it remains one piece.
 - If M is greater than 2 and less than 6, in this case, we divide the board into two parts. If M is only an odd number, we put one beeper in the middle, and if M is an even number, we put two beepers in the middle.
 - If M is 6, we can divide the board into 3 equal pieces, by traversing the board and placing the beeper incrementally at each two-step.
-- If M is greater than 6 I used this approach can divide the board into four sections: 
-<img width="227" alt="Capture" src="https://github.com/user-attachments/assets/963852d9-e4b6-4cc2-801b-5ac883c86110" />
+- If M is greater than 6 I used this approach can divide the board into four sections: <img width="227" alt="Capture" src="https://github.com/user-attachments/assets/963852d9-e4b6-4cc2-801b-5ac883c86110" />
 
 This general solution is if the board is horizontal or vertical or if m is divisible by 4 or not, it only affects where the beepers begin to be placed.
 If the number of rows or columns is equal to two: also here it does not matter if N is equal to 2 or M is equal to 2 and I will also assume that N is always equal to 2.
@@ -32,8 +31,10 @@ If the number of rows and columns is greater than two: Here the situation become
 - If N is not equal to M: If N and M are odd numbers the best way I found here to divide the map into four sections is to place a row of beepers in the middle and a column of beepers. 
 - If N and M are even numbers, I acknowledge that my solution is not optimal in this scenario. Finding a better solution would have complicated the code, and the impact is minimal. Therefore, I placed two rows of blanks in the middle and two columns of blanks in the middle.
 
--Now it remains the case that if I have an odd number and an even number:
+Now it remains the case that if I have an odd number and an even number:
+
 ![image](https://github.com/user-attachments/assets/bb64b07b-d191-495b-bf91-d3f9798eecdf)
+
 This method uses placing a column or row of beepers and then dividing the column or row into two parts.
 
 In all cases, I endeavored to balance the number of beepers and movements with the largest size of each part of the map. 
