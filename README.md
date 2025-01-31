@@ -18,4 +18,25 @@ If the number of rows or columns is equal to one: In this case, we have either a
 - If M is greater than 2 and less than 6, in this case, we divide the board into two parts. If M is only an odd number, we put one beeper in the middle, and if M is an even number, we put two beepers in the middle.
 - If M is 6, we can divide the board into 3 equal pieces, by traversing the board and placing the beeper incrementally at each two-step.
 - If M is greater than 6 I used this approach can divide the board into four sections: 
-   <img width="227" alt="Capture" src="https://github.com/user-attachments/assets/963852d9-e4b6-4cc2-801b-5ac883c86110" />
+<img width="227" alt="Capture" src="https://github.com/user-attachments/assets/963852d9-e4b6-4cc2-801b-5ac883c86110" />
+
+This general solution is if the board is horizontal or vertical or if m is divisible by 4 or not, it only affects where the beepers begin to be placed.
+If the number of rows or columns is equal to two: also here it does not matter if N is equal to 2 or M is equal to 2 and I will also assume that N is always equal to 2.
+- If M is equal to 2: We can divide it into two parts only by placing a space in the upper right and lower left parts.
+- If M is less than 7: I employed the Zigzag method. Specifically, if M is equal to 3, the board can be divided into 3 sections. In all other cases, the board can be divided into 4 sections.
+- If N is greater than 6: I can always divide the board into four sections, first, I count the number of steps between the two locations where the beepers are placed.
+Approximately four distinct cases can be differentiated based on the remainder when divided by 4.
+If the number of rows and columns is greater than two: Here the situation becomes more straightforward, as a single method can be identified and applied to numerous cases.
+- If M is equal to N: if N is odd can I find the best solution to divide it into four sections by placing a column in the middle and a row in the middle, there is another way by dividing the map diagonally But it costs more moves and the same number of pieces in both cases.
+- If N is even, I divide the map into four sections diagonally. This results in a greater number of moves but yields the largest possible size from each section. Alternatively, I can place two columns of beepers in the middle and two rows of beepers in the middle. This approach reduces the number of moves but does not maximize the size of each section. Therefore, the first method provides the fewest beepers and the largest portions of each piece.
+- If N is not equal to M: If N and M are odd numbers the best way I found here to divide the map into four sections is to place a row of beepers in the middle and a column of beepers. 
+- If N and M are even numbers, I acknowledge that my solution is not optimal in this scenario. Finding a better solution would have complicated the code, and the impact is minimal. Therefore, I placed two rows of blanks in the middle and two columns of blanks in the middle.
+
+-Now it remains the case that if I have an odd number and an even number:
+![image](https://github.com/user-attachments/assets/bb64b07b-d191-495b-bf91-d3f9798eecdf)
+This method uses placing a column or row of beepers and then dividing the column or row into two parts.
+
+In all cases, I endeavored to balance the number of beepers and movements with the largest size of each part of the map. 
+
+
+
