@@ -18,19 +18,4 @@ If the number of rows or columns is equal to one: In this case, we have either a
 - If M is greater than 2 and less than 6, in this case, we divide the board into two parts. If M is only an odd number, we put one beeper in the middle, and if M is an even number, we put two beepers in the middle.
 - If M is 6, we can divide the board into 3 equal pieces, by traversing the board and placing the beeper incrementally at each two-step.
 - If M is greater than 6 I used this approach can divide the board into four sections: 
-
-
-### Process of thinking
-To begin with, let me consider that the map comprises a board consisting of N rows and M columns.
-
-Therefore, the first step is to calculate N and M, to accomplish this, we move the robot from the starting point to the far right and then to the uppermost point.
-
-Now that we've calculated the number of rows and columns, we are looking for a way to divide the board into four or fewer sections.
-But there is no single ideal way to solve this problem, so we will divide it into several parts.
-
-If the number of rows or columns is equal to one: In this case, we have either a single row or a single column. Thus, it makes no difference whether N is equal to one or M. Let us assume that N is always equal to one:
-- If M is less than 3 here, we cannot divide the board and it remains one piece.
-- If M is greater than 2 and less than 6, in this case, we divide the board into two parts. If M is only an odd number, we put one beeper in the middle, and if M is an even number, we put two beepers in the middle.
-- If M is 6, we can divide the board into 3 equal pieces, by traversing the board and placing the beeper incrementally at each two-step.
-- If M is greater than 6 I used this approach can divide the board into four sections: 
 <img width="227" alt="Capture" src="https://github.com/user-attachments/assets/963852d9-e4b6-4cc2-801b-5ac883c86110" />
