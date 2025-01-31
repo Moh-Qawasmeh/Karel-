@@ -18,4 +18,4 @@ If the number of rows or columns is equal to one: In this case, we have either a
 - If M is greater than 2 and less than 6, in this case, we divide the board into two parts. If M is only an odd number, we put one beeper in the middle, and if M is an even number, we put two beepers in the middle.
 - If M is 6, we can divide the board into 3 equal pieces, by traversing the board and placing the beeper incrementally at each two-step.
 - If M is greater than 6 I used this approach can divide the board into four sections: 
-<img width="227" alt="Capture" src="https://github.com/user-attachments/assets/963852d9-e4b6-4cc2-801b-5ac883c86110" />
+   <img width="227" alt="Capture" src="https://github.com/user-attachments/assets/963852d9-e4b6-4cc2-801b-5ac883c86110" />
